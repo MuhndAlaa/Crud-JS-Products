@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">   
+  <link rel="stylesheet" href="css/style.css">
+  <title>CRUD Sign Up</title>
+</head>
+
+<body>
+
+  <div class="signInPage vh-100">
+    <div class="container h-100">
+      <div class="row h-100 justify-content-center">
+
+        <div class="col-lg-6 py-5 my-auto">
+
+          <div id="form" class="px-3 py-4 bg-white shadow rounded">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="First name" id="uFName">
+              <div id="error1" class="alert alert-danger d-none " role="alert">Your first name input is invalid , must first letter uppercase</div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Last name" id="uLName">
+              <div id="error2" class="alert alert-danger  d-none" role="alert">Your last name input is invalid  , must first letter uppercase</div>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Your E-mail" id="uEmail">
+              <div id="error3" class="alert alert-danger  d-none" role="alert">Your email input is invalid</div>
+              <div id="error4" class="alert alert-danger  d-none" role="alert">Your email is already registered</div>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" placeholder="Your Password" id="uPass">
+              <div id="error5" class="alert alert-danger  d-none" role="alert">Your password input is invalid must conatin at least one (upper , lower , number)</div>
+            </div>
+
+            <div class="form-group">
+              <input type="password" class="form-control" placeholder="Confirm Password" id="uPassConfirm">
+              <div id="error6" class="alert alert-danger  d-none" role="alert">Your password doesn't match</div>
+            </div>
+
+            <input id="checkBox" type="checkbox" class="custom-checkbox ml-auto"><a href="#collapseExample" class="px-2" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">I Accept All
+              Terms</a>
+
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                  This site only work in same brower ... otherwise all data can be lost
+                </div>
+              </div>
+
+            <button disabled id="regBtn" class="btn btn-success w-100 mt-3" onclick="uAdd()">Register</button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/signup.js"></script>
+</body>
+
+</html>

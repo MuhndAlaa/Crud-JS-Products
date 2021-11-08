@@ -1,0 +1,33 @@
+body
+{
+    font-family: 'Oxygen', sans-serif;
+}
+
+.font-courgette
+{
+    font-family: 'Courgette', cursive;
+}
+
+.font-32
+{
+    font-size: 2rem;
+}
+
+.signInPage
+{
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); 
+}
+
+.crudPage
+{
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); 
+    background-size: 100% 400vh;
+    background-repeat: repeat-y;
+}
+
+.alert
+{
+    padding: 5px;
+    font-size: 0.75rem;
+    margin: 5px 0;
+}
